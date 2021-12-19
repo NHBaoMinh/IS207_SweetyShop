@@ -1,0 +1,44 @@
+<!-- Modal -->
+<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div id='login-form' class="modal-content ">
+            <div class='container' id='popupForm'>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class='form'>
+                    <h2>XIN CHÀO,</h2>
+                    <p>Đăng nhập hoặc tạo tài khoản mới</p>
+                    <form id='formLogin'>
+                        <div class='input-form'>
+                            <input type='text' placeholder='Tên đăng nhập/Email' name='email' />
+                            <i class='fa fa-user fa-lg fa-fw' aria-hidden='true'></i>
+                        </div>
+                        <div class='input-form'>
+                            <input type='password' placeholder='Mật khẩu' name='password' />
+                            <i class='fas fa-lock fa-lg fa-fw' aria-hidden='true'></i>
+                        </div>
+                        <div class='input-form'>
+                            <input type='submit' value='Đăng Nhập' />
+                        </div>
+                        <div class='nho-dang-nhap'>
+                            <label><input type='checkbox' name='remember_me' /> Nhớ Tài Khoản</label>
+                            <a href='#'> Quên mật khẩu? </a>
+                        </div>
+                    </form>
+                    <p class='line'><span>Hoặc</span></p>
+                    <div class='icon-login'>
+                        <button><img src='/image/facebookz.png' /> Facebook </button>
+                        <button><img src='/image/google.png' />Google</button>
+                    </div>
+                    <div class='signout'>
+                        <p>Bạn Chưa Có Tài Khoản? <a style='cursor: pointer;' data-dismiss="modal" aria-label="Close"
+                                data-toggle="modal" data-target="#modal-register">Đăng
+                                Ký</a> tại đây</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

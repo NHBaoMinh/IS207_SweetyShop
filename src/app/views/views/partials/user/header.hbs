@@ -1,0 +1,94 @@
+<nav class='navbar navbar-expand-lg navbar-default container-fluid navbar-custom'>
+    <div class='content-wrap container-fluid'>
+        <div class='container-fluid d-flex justify-content-between'>
+            <div class='navbar-brand ml-2'>
+                <a class='' href='/'>Sweety Shop</a>
+            </div>
+            <div class='toggle-container'>
+                <button class='navbar-toggler' type='button' data-bs-toggle='collapse'
+                    data-bs-target='#navbar-toggle-content' aria-controls='navbarSupportedContent' aria-expanded='false'
+                    aria-label='Toggle navigation'>
+                    <span class='navbar-toggler-icon'></span>
+                </button>
+                <div class='collapse navbar-collapse' id='navbar-toggle-content'>
+                    <ul class='navbar-nav me-auto mb-2 mb-lg-0'>
+                        <li class='nav-item'>
+                            <a class='nav-link' aria-current='page' href='/'>Trang chủ</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='/menu'>Sản phẩm</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='/about-us'>Về chúng tôi</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='/blog'>Tin tức</a>
+                        </li>
+                        <li class='nav-item'>
+                            <a class='nav-link' href='/contact'>Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            {{#if data.user}}
+            <ul class='user-container-nav mr-5'>
+                <li>
+                    <a href='/users/checkout' style='margin-right:16px'><img src='/image/Favorite Cart.png'
+                            alt='' /></a>
+                </li>
+                <li class='user-container-nav-item'>
+                    <img class='user-image' src="\image\UserAccount.png" alt="User Account">
+                    <ul class="user-nav">
+                        <li class="user-container-infor">
+                            <div>
+                                <img class='user-image' src="\image\UserAccount.png" alt="User Account">
+                            </div>
+                            <div class="ml-3">
+                                <h6>{{data.user.fullName}}</h6>
+                                <p>{{data.user.email}}</p>
+                            </div>
+                        </li>
+                        <hr>
+                        {{#if (checkAdmin data.user.role)}}
+                        <li>
+                            <a href="/admin/user/info">Thông tin cá nhân</a>
+                        </li>
+                        {{else}}
+                        <li>
+                            <a href="/users/profile/{{data.user._id}}">Thông tin cá nhân</a>
+                        </li>
+                        {{/if}}
+
+                        <hr>
+                        <li>
+                            <a href="">Lịch sử mua hàng</a>
+                        </li>
+                        <hr>
+                        <li>
+                            <button class='btnLogout' style="color: red;">Đăng xuất</button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p style="display: none;" id="loginBtn"></p>
+            <p style="display: none;" id="registryBtn"></p>
+
+            {{else}}
+            <div class='user-container'>
+                <div class="user-container-login">
+                    <button id="loginBtn" class='btn' data-toggle="modal" data-target="#modal-login"
+                        style='width: fit-content; text-transform: uppercase;'>Đăng nhập</button>
+                </div>
+                <div class="user-container-signup">
+                    <button id="registryBtn" class='btn' data-toggle="modal" data-target="#modal-register"
+                        style='width: fit-content;  text-transform: uppercase;'>Đăng ký</button>
+                </div>
+            </div>
+            <div class="user-container-nav-item" style="display: none"></div>
+            <div class="user-nav" style="display: none"></div>
+            <div class='btnLogout' style="display: none"></div>
+            {{/if}}
+        </div>
+</nav>
+{{>user/signin}}
+{{>user/signup}}

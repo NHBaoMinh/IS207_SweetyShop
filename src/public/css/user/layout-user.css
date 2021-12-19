@@ -1,0 +1,15 @@
+.content-wrap {
+  width: 75vw;
+  margin: 0 auto; }
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0; }
+
+#alert {
+  position: fixed;
+  z-index: 1000;
+  width: 30%;
+  margin: 0 auto;
+  right: 20px;
+  bottom: 10px; }

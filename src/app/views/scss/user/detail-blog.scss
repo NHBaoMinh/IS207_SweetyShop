@@ -1,0 +1,66 @@
+.Banner {
+    width: 100%;
+    height: 42.8rem;
+}
+.Container {
+    display: flex;
+}
+.Content {
+    color: #222222cc;
+    font-size: 16px;
+    line-height: 19px;
+
+    margin-top: 40px;
+
+    &Title {
+        color: #222222;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 67.6px;
+        margin-left: auto;
+        margin-right: auto;
+        &Time {
+            margin-top: 20px;
+            color: #222222cc;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16.8px;
+            text-align: center;
+            display: block;
+        }
+    }
+    &Body {
+        margin-top: 31px;
+        p {
+            font-size: 16px;
+            color: #222222cc;
+            margin-bottom: 0;
+            //margin-top: 30px;
+        }
+        h3 {
+            //margin-bottom: 30px;
+            color: #222222;
+            font-size: 26px;
+            margin-top: 12px;
+        }
+    }
+    &Actor {
+        margin-top: 31px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 31px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        &Avatar {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: #c4c4c4;
+        }
+        &Name {
+            margin-left: 33px;
+        }
+    }
+}

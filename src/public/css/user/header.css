@@ -1,0 +1,310 @@
+#login-form {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 420px;
+  height: 470px;
+  z-index: 2;
+  padding: 20px;
+  border-radius: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); }
+
+#login-form .close-btn {
+  position: relative;
+  left: 340px;
+  cursor: pointer; }
+
+#login-form .container .form {
+  width: 100%;
+  font-weight: 600; }
+
+#login-form .container .form h2 {
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-align: center; }
+
+#login-form .container .form p {
+  text-align: center;
+  font-weight: 300; }
+
+#login-form .container .form .input-form {
+  margin-bottom: 15px; }
+
+#login-form .container .form .input-form input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  border: 0.5px solid;
+  font-size: 16px;
+  background: transparent;
+  border-radius: 10px; }
+
+#login-form .container .form .input-form input[type='text'] {
+  padding-left: 40px; }
+
+#login-form .container .form .input-form input[type='password'] {
+  padding-left: 40px; }
+
+#login-form .container .form .input-form {
+  position: relative; }
+
+#login-form .container .form .input-form i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s; }
+
+#login-form .container .form .input-form input[type='submit'] {
+  background: #9f0311;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer; }
+
+#login-form .container .form .input-form input[type='submit']:hover {
+  background: #bb0303; }
+
+#login-form .container .form .nho-dang-nhap {
+  margin-bottom: 10px;
+  font-size: 12px; }
+
+#login-form .container .form .nho-dang-nhap a {
+  color: #9f0311;
+  float: right; }
+
+#login-form .container .form .input-form p a {
+  color: #9f0311; }
+
+#login-form .container .form .line {
+  width: 100%;
+  text-align: center;
+  border-bottom: 0.5px solid;
+  line-height: 0.1em;
+  margin: 10px 0 20px; }
+
+#login-form .container .form .line span {
+  background: #fff;
+  padding: 0 10px;
+  font-size: 14px; }
+
+#login-form .container .form .icon-login {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  text-align: center;
+  gap: 25px;
+  border: 1px; }
+
+#login-form .container .form .icon-login img {
+  width: 15%;
+  margin-right: 8px;
+  border: 1px;
+  margin-top: -3px; }
+
+#login-form .container .form .icon-login button {
+  border: 0.5px solid;
+  background-color: #fff;
+  border-radius: 8px;
+  height: 45px;
+  font-weight: 600;
+  margin-bottom: 10px; }
+
+#login-form .container .form .signout p {
+  font-size: 14px;
+  font-weight: 600; }
+
+#login-form .container .form .signout a {
+  color: #9f0311; }
+
+#signup-form {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 420px;
+  z-index: 2;
+  padding: 20px;
+  border-radius: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2); }
+
+#signup-form .container .form {
+  width: 100%;
+  font-weight: 600; }
+
+#signup-form .container .form h2 {
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+#signup-form .container .form h3 {
+  font-size: 1em;
+  font-weight: 600; }
+
+#signup-form .container .form p {
+  text-align: center;
+  font-weight: 300; }
+
+#signup-form .container .form .input-form {
+  margin-bottom: 15px; }
+
+#signup-form .container .form .input-form select:nth-child(1) {
+  width: 47%;
+  padding: 10px 20px;
+  outline: none;
+  border: 0.5px solid;
+  font-size: 14px;
+  background: transparent;
+  border-radius: 10px; }
+
+#signup-form .container .form .input-form select:nth-child(2) {
+  width: 47%;
+  padding: 10px 20px;
+  outline: none;
+  border: 0.5px solid;
+  font-size: 14px;
+  background: transparent;
+  border-radius: 10px;
+  float: right; }
+
+#signup-form .container .form .input-form select:nth-child(3) {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  border: 0.5px solid;
+  font-size: 14px;
+  background: transparent;
+  border-radius: 10px; }
+
+#signup-form .container .form .input-form input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  border: 0.5px solid;
+  font-size: 16px;
+  background: transparent;
+  border-radius: 10px; }
+
+#signup-form .container .form .input-form input[type='submit'] {
+  background: #9f0311;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer; }
+
+#signup-form .container .form .input-form input[type='submit']:hover {
+  background: #bb0303; }
+
+#signup-form .container .form .nho-dang-nhap {
+  margin-bottom: 10px;
+  font-size: 16px; }
+
+#signup-form .container .form .nho-dang-nhap a {
+  color: #9f0311;
+  float: right; }
+
+#signup-form .container .form .input-form p a {
+  color: #9f0311; }
+
+#signup-form .container .form .signout p {
+  font-size: 14px;
+  font-weight: 600; }
+
+#signup-form .container .form .signout a {
+  color: #9f0311; }
+
+.navbar-custom {
+  background-color: #9f0311;
+  text-transform: uppercase;
+  font-size: 16px; }
+
+.navbar-brand > a,
+.toggle-container a,
+.navbar-brand > a:hover {
+  color: #fff;
+  text-decoration: none; }
+
+.toggle-container {
+  transform: translateX(47px); }
+
+.user-container-nav {
+  margin: auto 0; }
+
+.user-container-nav > li {
+  display: inline-block;
+  list-style-type: none; }
+
+.user-container button {
+  color: #fff; }
+
+.user-container > div {
+  display: inline-block; }
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
+
+.user-nav {
+  display: none;
+  width: 250px;
+  list-style-type: none;
+  background-color: #fff;
+  margin: 0;
+  padding: 5px;
+  z-index: 10; }
+
+.user-nav li {
+  margin: 10px; }
+
+.user-container-nav-item a,
+.user-nav li a {
+  display: block;
+  text-decoration: none;
+  text-transform: none;
+  color: #000; }
+
+.user-nav li div p,
+.user-nav li div h6 {
+  margin: 0;
+  text-transform: none; }
+
+.user-nav li div p {
+  font-size: 12px; }
+
+.mini-user {
+  display: block;
+  margin-left: 10px;
+  overflow: hidden; }
+
+.user-container-infor {
+  display: flex;
+  margin-top: 10px; }
+
+.user-container-nav-item {
+  position: relative; }
+
+.user-nav {
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  top: 115%;
+  left: -400%; }
+
+.user-container-nav-item:hover {
+  cursor: pointer; }
+
+.btnLogout {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  cursor: pointer; }

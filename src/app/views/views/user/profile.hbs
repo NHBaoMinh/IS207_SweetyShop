@@ -1,0 +1,77 @@
+<div class="content-wrap row">
+    <div class="pt-4 ml-4 pl-2 col-3 user-actions">
+        <div class="user-actions-contents p-2">
+            <div id="user-informations-group" style="font-weight: 600; color: #9f0311;"><img src="\image\Person.png"
+                    alt="User Information">Thông tin tài khoản</div>
+            <div id="user-change-password-group"><img src="\image\PasswordProfile.png" alt="User Password">Thay đổi mật
+                khẩu</div>
+        </div>
+    </div>
+
+    <div class="pt-4 ml-4 pl-2 user-informations col-6">
+        <form method="POST" action="/user-update" class="user-information-form p-4">
+            <div class="form-group d-inline">
+                {{#if data.user.image}}
+                <img src="\image\UserAccount.png" alt="avatar" class="user-image-avatar">
+                {{else}}
+                <img src="\image\test.jpeg" alt="avatar" class="user-image-avatar ">
+                {{/if}}
+                <input type="file" class="form-control-file d-none ml-4" id="image-upload-btn" name="image">
+                <input type="button" id="image-upload-raiser" class="btn btn-danger ml-4" value="Đổi ảnh đại diện">
+            </div>
+
+            <div class="form-group mt-4">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                    value="{{data.user.email}}" disabled>
+            </div>
+
+            <div class="form-group">
+                <label for="fullName">Họ tên</label>
+                <input type="text" class="form-control" id="fullName" value="{{data.user.fullName}}" name="fullName">
+            </div>
+
+            <div class="form-group">
+                <label for="birthday">Ngày sinh</label>
+                <input type="date" class="form-control" id="birthday" value="{{data.user.birthday}}" name="birthday">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Địa chỉ</label>
+                <input type="string" class="form-control" id="address" value="{{data.user.address}}"
+                    name="address">
+            </div>
+
+            <div class="button-group">
+                <button class="btn btn-secondary" id="cancel-btn" disabled><a class="text-decoration-none"
+                        id="cancel-link" style="color: white;">Hủy</a></button>
+                <button type="button" class="btn btn-danger ml-3" id="save-btn">Lưu</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="pt-4 ml-4 pl-2 user-change-password col-6" style="display:none;">
+        <form method="POST" action="/user-password-change" class="user-information-form p-4">
+            <div class="form-group mt-4">
+                <label for="currentPass">Mật khẩu hiện tại</label>
+                <input type="password" class="form-control" id="currentPass">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Mật khẩu mới</label>
+                <input type="password" class="form-control" id="newPass" name="newPass">
+            </div>
+
+            <div class="form-group">
+                <label for="rePass">Nhập lại mật khẩu mới</label>
+                <input type="Password" class="form-control" id="rePass" name="rePass">
+            </div>
+            <div class="button-group">
+                <button class="btn btn-secondary" id="cancel-btn" disabled><a class="text-decoration-none"
+                        id="cancel-link" style="color: white;">Hủy</a></button>
+                <button type="submit" class="btn btn-danger ml-3" id="save-btn" disabled>Lưu</button>
+            </div>
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,216 @@
+.manaTypeCake-headerTitle {
+  font-weight: bold;
+  font-size: large;
+  margin-top: 1.2rem;
+  margin-bottom: 7px; }
+
+.manaTypeCake-allDropdowStyle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 4px;
+  justify-content: space-between; }
+
+.manaTypeCake-dropComponentStyle {
+  flex-direction: column;
+  margin: 0 3.5%; }
+
+.manaTypeCake-dropDownStyle {
+  border-radius: 6px;
+  border-color: black;
+  border-width: 1px;
+  box-sizing: content-box;
+  padding: 5px 4px;
+  font-weight: normal;
+  border-radius: 6px; }
+
+.manaTypeCake-dropDownStyle:hover {
+  border-color: #9f0311; }
+
+.manaTypeCake-buttonSearch {
+  margin-top: 70%;
+  width: 85px;
+  border-radius: 6px;
+  background-color: #9f0311;
+  color: white; }
+
+.manaTypeCake-buttonSearch:hover {
+  box-shadow: 1px 1px 4px 1px grey;
+  color: black; }
+
+.manaTypeCake-styleList {
+  border-style: solid;
+  border-width: 1px 1px;
+  width: 92%;
+  height: 65%;
+  border-radius: 6px;
+  margin-top: 24px;
+  margin-left: 48px;
+  margin-right: 48px;
+  position: relative; }
+
+.manaTypeCake-addButton {
+  position: absolute;
+  justify-content: flex-end;
+  right: 12px;
+  bottom: 12px;
+  border-radius: 6px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background-color: #9f0311;
+  color: white; }
+
+.manaTypeCake-addButton:hover {
+  box-shadow: 1px 1px 4px 1px grey;
+  color: black; }
+
+.manaTypeCake-rowDataStyle {
+  flex-direction: row;
+  display: flex; }
+
+.manaTypeCake-rowDataStyle:hover {
+  border-width: 2px;
+  border-color: red;
+  border-style: solid; }
+
+.manaTypeCake-tableStyle {
+  width: 92%;
+  left: 12px; }
+
+.manaTypeCake-optionDropDown {
+  font-weight: 500; }
+
+.manaTypeCake-optionDropDown :hover {
+  background-color: #9f0311;
+  color: white; }
+
+.manaTypeCake-styleList tbody td {
+  width: 25%; }
+
+.manaTypeCake-styleList thead th {
+  width: 21%; }
+
+.manaTypeCake-styleList thead {
+  display: block; }
+
+.manaTypeCake-styleList tbody {
+  display: block;
+  height: 26rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-weight: 500; }
+
+.manaTypeCake-dropdown {
+  position: relative;
+  display: inline-block; }
+
+.manaTypeCake-dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 120;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+.manaTypeCake-dropdown-content button {
+  color: #9f0311;
+  padding: 3px 12px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  width: 100%; }
+
+.manaTypeCake-dropdown-content button:hover {
+  background-color: #9f0311;
+  color: white;
+  border-radius: 6px;
+  outline: none;
+  border: none; }
+
+.manaTypeCake-dropdown:hover .manaTypeCake-dropdown-content {
+  display: block;
+  color: white;
+  border-radius: 6px; }
+
+.manaTypeCake-dropdown:hover .manaTypeCake-dropdowndropbtn {
+  background-color: #9f0311;
+  width: 18px;
+  height: 18px;
+  color: white; }
+
+.manaTypeCake-firstRowTable {
+  position: sticky;
+  top: 0;
+  background-color: white; }
+
+.change-password-div-wrap {
+  display: inline-flex;
+  flex-direction: column; }
+
+.change-password-change-info {
+  align-self: flex-end; }
+
+.change-password-wrap-content {
+  width: 100%;
+  height: 100%; }
+
+.change-password-label-input > label {
+  font-size: 16px;
+  margin: auto 0;
+  display: inline-block;
+  width: 180px;
+  margin-right: 20px;
+  font-weight: normal; }
+
+.change-password-label-input {
+  padding-bottom: 20px; }
+
+.change-password-label-input > input,
+.change-password-label-input > select {
+  height: 40px;
+  width: 360px;
+  border-radius: 10px;
+  border: 1px solid #595260;
+  font-weight: 500px;
+  opacity: 0.5;
+  line-height: 16px;
+  padding: 0 10px; }
+
+.change-password-label-input > input,
+.change-password-label-input > select {
+  outline-color: #9f0311; }
+
+.change-password-label-input > input:hover,
+.change-password-label-input > select:hover {
+  border-color: #9f0311; }
+
+.change-password-btn-cancel {
+  border-radius: 10px;
+  width: fit-content;
+  min-width: 92px;
+  height: 42px;
+  background-color: #e9eaea;
+  border: none;
+  color: #9f0311;
+  margin-right: 5px; }
+
+.change-password-btn-save {
+  border-radius: 10px;
+  width: fit-content;
+  min-width: 92px;
+  height: 42px;
+  background-color: #9f0311;
+  border: none;
+  color: #ffffff; }
+
+.change-password-custom-btn-success {
+  border-radius: 10px;
+  width: fit-content;
+  min-width: 92px;
+  height: 42px;
+  background-color: #28a745;
+  border: none;
+  color: #ffffff; }

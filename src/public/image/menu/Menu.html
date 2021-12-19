@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Menu</title>
+    <style>
+        html{
+            font-size: 16px;
+        }
+
+        .container-fluid .img-header{
+            width: 100%;
+        }
+
+        .container{
+            padding-bottom: 50px;
+        }
+
+        .shopoption {
+            margin-top: 50px;
+        }
+
+        .shop_option_search form{
+            border: 1px solid #e1e1e1;
+            height: 46px;
+            position: relative;
+        }
+        .shop_option_search .type{
+            color: #a39f9f;
+            font-size: 16px;
+            padding-left: 5px;
+        }
+        .shop_option_search input{
+            width: 49%;
+            height: 100%;
+            border: none;
+            color: black;
+            padding-left: 20px;
+        }
+        .shop_option_search select{
+            border: none;
+            background: transparent;
+            display: inline-block;
+            width: 35%;
+            height: 44px;
+            line-height: 44px;
+            padding-left: 30px;
+        }
+        .shop_option_search span{
+            color: #e1e1e1;
+            font-size: 22px;
+        }
+
+        .shop_option_right{
+            float: right;
+        }
+        .shop_option_right select{
+            border: none;
+            background: #f5f5f5;
+            width: 200px;
+            height: 46px;
+            padding-left: 40px;
+        }
+
+        .discount{
+            position: absolute;
+            z-index: 5;
+            font-size: 14px;
+            left: 210px;
+            width: 45px;
+            height: 25px;
+            text-align: center;
+            margin-top: 20px;
+            background-color: #9F0311;
+            color: white;
+        }
+        .product {
+            margin-top: 30px;
+            box-shadow: 4px 3px 3px #a39f9f;
+            border-radius: 7px;
+        }
+        .iteam:hover{
+            transition-duration: .3s;
+            transition-property: transform;
+            transition-timing-function: ease-out;
+            transform: translateY(-20px);
+            cursor: pointer;
+        }
+
+        .product .cake{
+            width: 100%;
+        }
+        .product .vote{
+            color: #a39f9f;
+            font-size: 14px;
+        }
+        .product .star{
+            float: right;
+        }
+        .product .star .img-star{
+            margin-bottom: 3px;
+            margin-right: 2px;
+            width: 16px;
+            height: 16px;
+        }
+
+        .product_text{
+            padding-top: 15px;
+            padding-left: 7px;
+        }
+
+        .product_name{
+            margin-top: 10px;
+            font-weight: 700;
+        }
+        .product .price {
+            margin-top: 10px;
+            color: #9F0311;
+            font-weight: 600;
+        }
+        .product .price del{
+            color: #a39f9f;
+        }
+        .product .cart{
+           margin-left: 50px;
+           width: 45px;
+           height: 45px;
+        }
+
+        .shop_pagination {
+            padding-top: 25px;
+        }
+        .shop_pagination a{
+            display: inline-block;
+            color: black;
+            font-weight: 600;
+        }
+        .shop_pagination button{
+            width: 400px;
+            margin-left: 400px;
+            background-color: white;
+        }
+        .shop_pagination button:hover{
+            background: #a39f9f;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <img class ="img-header" src="cake.jpg" />
+    </div>
+    
+    <div class="container">
+        <div class="shopoption">
+            <div class="row">
+                <div class="col-lg-7 col-md-7">
+                    <div class="shop_option_search">
+                        <form action="#">
+                            <span class="type">Loại bánh:</span> 
+                            <select>
+                                <option value="">Lựa chọn</option>
+                                <option value="">Red Velvet</option>
+                                <option value="">Cup Cake</option>
+                                <option value="">Biscuit</option>
+                            </select>
+                            <span>|</span>
+                            <input type="text" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-5">
+                    <div class="shop_option_right">
+                        <select>
+                            <option value="">Sắp xếp</option>
+                            <option value="">A to Z</option>
+                            <option value="">Giá từ thấp đến cao</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 iteam">
+                <div class="discount">-20%</div>
+                <div class="product">
+                    <table class="">
+                        <tr>
+                            <td>
+                                <img class="cake" src="red_velvet.jpg" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product_text">
+                                <div class="vote"> Bánh sinh nhật 
+                                    <span  class="star" ><img class="img-star" src="Star.png" />5(3)</span>
+                                </div>
+                                <div class="product_name">RED VELVET CAKE</div>
+                                <span class="price"><del>250.000 đ </del>220.000đ </span>
+                                <img class="cart" src="Cart.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 iteam">
+                <div class="discount">-20%</div>
+                <div class="product">
+                    <table class="">
+                        <tr>
+                            <td>
+                                <img class="cake" src="Tiramisu.jpg" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product_text">
+                                <div class="vote"> Bánh sinh nhật 
+                                    <span  class="star" ><img class="img-star" src="Star.png" />5(3)</span>
+                                </div>
+                                <div class="product_name">TIRAMISU CAKE</div>
+                                <span class="price"><del>250.000 đ </del>220.000đ </span>
+                                <img class="cart" src="Cart.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 iteam">
+                <div class="discount">-20%</div>
+                <div class="product">
+                    <table class="">
+                        <tr>
+                            <td>
+                                <img class="cake" src="Corn.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product_text">
+                                <div class="vote"> Bánh sinh nhật 
+                                    <span  class="star" ><img class="img-star" src="Star.png" />5(3)</span>
+                                </div>
+                                <div class="product_name">CORN CHEESE CAKE</div>
+                                <span class="price"><del>250.000 đ </del>220.000đ </span>
+                                <img class="cart" src="Cart.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 iteam">
+                <div class="discount">-20%</div>
+                <div class="product">
+                    <table class="">
+                        <tr>
+                            <td>
+                                <img class="cake" src="Mango.jpg" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product_text">
+                                <div class="vote"> Bánh sinh nhật 
+                                    <span  class="star" ><img class="img-star" src="Star.png" />5(3)</span>
+                                </div>
+                                <div class="product_name">MANGO CAKE</div>
+                                <span class="price"><del>250.000 đ </del>220.000đ </span>
+                                <img class="cart" src="Cart.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 iteam">
+                <div class="discount">-20%</div>
+                <div class="product">
+                    <table >
+                        <tr>
+                            <td>
+                                <img class="cake" src="Choco.jpg" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product_text">
+                                <div class="vote"> Bánh sinh nhật 
+                                    <span  class="star" ><img class="img-star" src="Star.png" />5(3)</span>
+                                </div>
+                                <div class="product_name">CHOCOLATE CAKE</div>
+                                <span class="price"><del>250.000 đ </del>220.000đ </span>
+                                <img class="cart" src="Cart.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 iteam">
+                <div class="discount">-20%</div>
+                <div class="product">
+                    <table >
+                        <tr>
+                            <td>
+                                <img class="cake" src="Strawberry.jpg" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product_text">
+                                <div class="vote"> Bánh sinh nhật 
+                                    <span  class="star" ><img class="img-star" src="Star.png" />5(3)</span>
+                                </div>
+                                <div class="product_name">STRAWBERRY CAKE</div>
+                                <span class="price"><del>250.000 đ </del>220.000đ </span>
+                                <img class="cart" src="Cart.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 iteam">
+                <div class="discount">-20%</div>
+                <div class="product">
+                    <table class="">
+                        <tr>
+                            <td>
+                                <img class="cake" src="Mousse.png" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product_text">
+                                <div class="vote"> Bánh sinh nhật 
+                                    <span  class="star" ><img class="img-star" src="Star.png" />5(3)</span>
+                                </div>
+                                <div class="product_name">MOUSSE CAKE</div>
+                                <span class="price"><del>250.000 đ </del>220.000đ </span>
+                                <img class="cart" src="Cart.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 iteam">
+                <div class="discount">-20%</div>
+                <div class="product">
+                    <table class="">
+                        <tr>
+                            <td>
+                                <img class="cake" src="Cupcake.jpg" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product_text">
+                                <div class="vote"> Bánh sinh nhật 
+                                    <span  class="star" ><img class="img-star" src="Star.png" />5(3)</span>
+                                </div>
+                                <div class="product_name">VANILLA CUPCAKE</div>
+                                <span class="price"><del>250.000 đ </del>220.000đ </span>
+                                <img class="cart" src="Cart.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 iteam">
+                <div class="discount">-20%</div>
+                <div class="product">
+                    <table class="">
+                        <tr>
+                            <td>
+                                <img class="cake" src="Pink.jpg" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product_text">
+                                <div class="vote"> Bánh sinh nhật 
+                                    <span  class="star" ><img class="img-star" src="Star.png" />5(3)</span>
+                                </div>
+                                <div class="product_name">PINK CAKE</div>
+                                <span class="price"><del>250.000 đ </del>220.000đ </span>
+                                <img class="cart" src="Cart.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 iteam">
+                <div class="discount">-20%</div>
+                <div class="product">
+                    <table class="">
+                        <tr>
+                            <td>
+                                <img class="cake" src="Oreo.jpg" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product_text">
+                                <div class="vote"> Bánh sinh nhật 
+                                    <span  class="star" ><img class="img-star" src="Star.png" />5(3)</span>
+                                </div>
+                                <div class="product_name">OREO CAKE</div>
+                                <span class="price"><del>250.000 đ </del>220.000đ </span>
+                                <img class="cart" src="Cart.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="shop_pagination">
+                    <button><a href="#">Xem Thêm</a> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

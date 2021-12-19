@@ -1,0 +1,53 @@
+.group-menu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.group-menu:first-child {
+    margin-top: 0;
+}
+
+.group-menu > h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #000;
+    font-style: initial;
+    font-weight: 500;
+    opacity: 0.5;
+    margin: auto 0;
+}
+
+.group-menu > li {
+    margin-top: 25px;
+}
+
+.group-menu > li > a {
+    text-decoration: none;
+}
+
+.nav-title > span {
+    font-size: 16px;
+    color: #000;
+}
+
+.nav-title > span:hover {
+    color: #9f0311;
+}
+
+.navbar-custom {
+    margin-top: 36px;
+}
+
+.menu-sidebar-custom {
+    margin-top: 32px;
+}
+
+.nav_icon_small > img {
+    width: 16px;
+    height: 16px;
+}
+
+.nav_icon_small {
+    padding-right: 5px;
+}

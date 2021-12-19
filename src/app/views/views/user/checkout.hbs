@@ -1,0 +1,120 @@
+<div class="content-wrap">
+    <div class="container checkout">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="checkout-header">
+                    <img class="checkout-img-header" src="/image/checkout/paper.png" />
+                    <h4>Xác Nhận Đơn Hàng</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12">
+                <div class="checkout-delivery">
+                    <h5>Giao Hàng</h5>
+                    <hr style="width: 30%; height: 2px; background-color:#9f0311; margin-left: 0px ;" />
+                    <img class="img-delivery" src="/image/checkout/Delivery.png" />
+                    <b> Địa chỉ:</b>
+                    <div class="checkout-address"><input class="input-time" type="text" placeholder="Địa chỉ của bạn" />
+                    </div>
+                    <hr style="width: 90%; float: right;" />
+                    <div class="checkout-time">
+                        <b>Nhận hàng trong Ngày Mai</b>
+                        <div><input class="input-time" type="text" placeholder="Vào lúc mấy giờ?" /></div>
+                    </div>
+                    <div class="form_deli">
+                        <form>
+                            <input class="input-form" type="text" placeholder="Tên Người Nhận" />
+                            <input class="input-form" type="text" placeholder="Số Điện Thoại" />
+                            <input class="input-form" type="text" placeholder="Thêm Hướng Dẫn Giao Hàng" />
+                        </form>
+                    </div>
+                </div>
+                <div class="payment">
+                    <h5>Phương thức thanh toán</h5>
+                    <hr style="width: 30%; height: 2px; background-color:#9f0311; margin-left: 0px ;" />
+                    <div class="form_pay">
+                        <div class="check">
+                            <input name="check" type="radio" />
+                            <img class="pay" src="/image/checkout/money.jpg" alt="">
+                            Tiền mặt
+                        </div>
+                        <hr />
+                        <div class="check">
+                            <input name="check" type="radio" />
+                            <img class="pay" src="/image/checkout/momo.png" />
+                            MoMo
+                        </div>
+                        <hr />
+                        <div class="check">
+                            <input name="check" type="radio" />
+                            <img class="pay" src="/image/checkout/zalo.png" />
+                            ZaloPay
+                        </div>
+                        <hr />
+                        <div class="check">
+                            <input name="check" type="radio" />
+                            <img class="pay" src="/image/checkout/shopee.png" />
+                            ShoppeePay
+                        </div>
+                        <hr />
+                        <div class="check">
+                            <input name="check" type="radio" />
+                            <img class="pay" src="/image/checkout/card.png" />
+                            Thẻ Ngân Hàng
+                        </div>
+                    </div>
+                    <div class="agree">
+                        <img class="agree-img" src="/image/checkout/checkbox.png" />
+                        Đồng ý với các <a href="#">điều khoản và điều kiện</a> mua hàng của Sweety Shop.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 ">
+                <table class="note_order">
+                    <tr>
+                        <td>
+                            <div class="checkout-cake">
+                                <h5>Các món đã chọn</h5>
+                                <form action="/menu">
+                                    <button class="btn-add">Thêm món</button>
+                                </form>
+                                <hr style="width: 30%; height: 2px; background-color:#9f0311; margin-left: 0px ;" />
+                                <table class="checkout-menu" id='checkout-menu'>
+
+                                </table>
+                            </div>
+                            <div class="total">
+                                <h5>Tổng cộng</h5>
+                                <hr style="width: 30%; height: 2px; background-color:#9f0311; margin-left: 0px ;" />
+                                <table>
+                                    <tr>
+                                        <td style="width: 600px;">Thành Tiền</td>
+                                        <td class='totalPrice'>880.000đ</td>
+                                    </tr>
+                                </table>
+                                <hr />
+                                <div class="order">
+                                    <table>
+                                        <tr>
+                                            <td style="width: 420px;">
+                                                Thành Tiền
+                                                <br />
+                                                <b class='totalPrice'>880.000đ</b>
+                                            </td>
+                                            <td>
+                                                <button type='button' id='btn-DatHang' class="btn-order">Đặt
+                                                    hàng</button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

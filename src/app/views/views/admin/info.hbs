@@ -1,0 +1,51 @@
+<form id='form-change-info'>
+    <div class='info-div-wrap'>
+        <div class='info-wrap-content'>
+            <div class='info-label-input'>
+                <label for='' class=''>Email</label>
+                <input
+                    type='email'
+                    name='email'
+                    class=''
+                    placeholder='example@example.com'
+                    value='{{data.user.email}}'
+                    disabled
+                />
+            </div>
+            <div class='info-label-input'>
+                <label for='' class=''>Họ và tên</label>
+                <input
+                    type='text'
+                    name='fullName'
+                    class=''
+                    placeholder='Nhập họ và tên'
+                    value='{{data.user.fullName}}'
+                />
+            </div>
+            <div class='info-label-input'>
+                <label for='' class=''>Ngày sinh</label>
+                <input
+                    type='date'
+                    name='birthday'
+                    class=''
+                    placeholder='Chọn ngày sinh'
+                    value='{{data.user.birthday}}'
+                />
+            </div>
+           <div class='info-label-input'>
+                <label for='' class=''>Họ và tên</label>
+                <input
+                    type='text'
+                    name='address'
+                    class=''
+                    placeholder='Nhập họ và tên'
+                    value='{{data.user.address}}'
+                />
+            </div>
+        </div>
+        <div class='info-change-info'>
+            <button type='submit' class='info-btn-cancel' id='info-btn-cancel'>Hủy</button>
+            <button type='submit' class='info-btn-save' id='info-btn-save'>Lưu</button>
+        </div>
+    </div>
+</form>

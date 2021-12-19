@@ -1,0 +1,148 @@
+.container-fluid .img-header {
+    width: 100%;
+}
+
+.container {
+    padding-bottom: 50px;
+}
+
+.shopoption {
+    margin-top: 50px;
+}
+
+.shop_option_search form {
+    border: 1px solid #e1e1e1;
+    height: 46px;
+    position: relative;
+}
+.shop_option_search .type {
+    color: #a39f9f;
+    font-size: 16px;
+    padding-left: 5px;
+}
+.shop_option_search input {
+    width: 49%;
+    height: 100%;
+    border: none;
+    color: black;
+    padding-left: 20px;
+    outline: none;
+}
+.shop_option_search select {
+    border: none;
+    background: transparent;
+    display: inline-block;
+    width: 35%;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 30px;
+    outline: none;
+}
+
+.shop_option_search span {
+    color: #e1e1e1;
+    font-size: 22px;
+}
+
+.shop_option_right {
+    float: right;
+}
+.shop_option_right select {
+    border: none;
+    background: #f5f5f5;
+    width: 200px;
+    height: 46px;
+    padding-left: 40px;
+}
+
+.discount {
+    position: absolute;
+    z-index: 5;
+    font-size: 14px;
+    left: 210px;
+    width: 45px;
+    height: 25px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #9f0311;
+    color: white;
+}
+.product {
+    margin-top: 30px;
+    box-shadow: 4px 3px 3px #a39f9f;
+    border-radius: 7px;
+}
+.item {
+    color: #000000;
+    text-decoration: none;
+}
+
+.item:hover {
+    color: #000000;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+.product .cake {
+    width: 100%;
+    height: 180px;
+}
+.product .vote {
+    color: #a39f9f;
+    font-size: 14px;
+}
+.product .star {
+    float: right;
+    margin-right: 5px;
+}
+.product .star .img-star {
+    margin-bottom: 3px;
+    margin-right: 2px;
+    width: 16px;
+    height: 16px;
+}
+
+.product_text {
+    padding-top: 15px;
+    padding-left: 7px;
+}
+
+.product_name {
+    margin-top: 6px;
+    font-weight: 700;
+}
+.product .price {
+    margin-top: 10px;
+    color: #9f0311;
+    font-weight: 600;
+}
+.product .price del {
+    color: #a39f9f;
+    margin-right: 10px;
+}
+.product .cart {
+    margin-left: 50px;
+    width: 45px;
+    height: 45px;
+}
+
+.shop_pagination {
+    padding-top: 25px;
+}
+.shop_pagination a {
+    display: inline-block;
+    color: black;
+    font-weight: 600;
+}
+.shop_pagination button {
+    width: 400px;
+    margin-left: 400px;
+    background-color: white;
+}
+.shop_pagination button:hover {
+    background: #a39f9f;
+}

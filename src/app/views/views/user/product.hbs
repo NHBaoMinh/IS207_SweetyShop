@@ -1,0 +1,58 @@
+<div class="content-wrap mt-4">
+    <div class="product">
+        <div class="row product-container p-4">
+            <div class="col-5 product-container-image">
+                <img src="\image\test.jpeg" alt="Product Image" class="product-image">
+            </div>
+            <div class="col-1"></div>
+            <div class="col-6 product-container-info">
+                <h3>{{data.cake.name}}</h3>
+                <form method="post" action="/users/add-cart">
+                    <input type="text" value="{{data.cake._id}}" name="id" style="display:none">
+                    <input type="number" value="{{data.cake.price}}" name="price" style="display:none">
+                    <input type="number" value="{{data.cake.priceDiscount}}" name="priceDiscount" style="display:none">
+                    <p class='product-text-price'><del>{{data.cake.price}} đ</del>
+                        <span style='color: #9f0311'>{{data.cake.priceDiscount}} đ</span>
+                    </p>
+                    <div class="input-group mb-3 mt-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17 20H1C0.734784 20 0.48043 19.8946 0.292893 19.7071C0.105357 19.5196 0 19.2652 0 19V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0H17C17.2652 0 17.5196 0.105357 17.7071 0.292893C17.8946 0.48043 18 0.734784 18 1V19C18 19.2652 17.8946 19.5196 17.7071 19.7071C17.5196 19.8946 17.2652 20 17 20ZM5 5V7H13V5H5ZM5 9V11H13V9H5ZM5 13V15H10V13H5Z"
+                                        fill="#E4E4E4" />
+                                </svg>
+                            </span>
+                        </div>
+                        <textarea id='product-note' type="text" class="form-control"
+                            placeholder="Bạn có muốn ghi chú gì cho sản phẩm này không ?" name="note"></textarea>
+                    </div>
+
+                    <div class="number-input">
+                        <span onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></span>
+                        <input id='product-quantity' class="quantity" min="1" name="quantity" value="1" type="number">
+                        <span onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                            class="plus"></span>
+                    </div>
+                    <div>
+                        <button type='button' id='button-add-to-cart' value='{{data.cake._id}}'
+                            class=" mt-4 btn add-to-cart">Thêm vào
+                            giỏ
+                            hàng</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="product-descriptions">
+            <div class="product-descriptions-section">
+                <p>THÔNG TIN SẢN PHẨM</p>
+            </div>
+            <div class="product-descriptions-main">
+                <h2 style="font-size: 18px; color: #9f0311">{{data.cake.name}}</h2>
+                <p>{{data.cake.description}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,109 @@
+@import 'variables'; //Import _variable de su dung variable
+@import 'signin';
+@import 'signup';
+
+.navbar-custom {
+    background-color: #9f0311;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.navbar-brand > a,
+.toggle-container a,
+.navbar-brand > a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.toggle-container {
+    transform: translateX(47px);
+}
+
+.user-container-nav {
+    margin: auto 0;
+}
+
+.user-container-nav > li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.user-container button {
+    color: #fff;
+}
+
+.user-container > div {
+    display: inline-block;
+}
+
+.user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-nav {
+    display: none;
+    width: 250px;
+    list-style-type: none;
+    background-color: #fff;
+    margin: 0;
+    padding: 5px;
+    z-index: 10;
+}
+
+.user-nav li {
+    margin: 10px;
+}
+
+.user-container-nav-item a,
+.user-nav li a {
+    display: block;
+    text-decoration: none;
+    text-transform: none;
+    color: #000;
+}
+
+.user-nav li div p,
+.user-nav li div h6 {
+    margin: 0;
+    text-transform: none;
+}
+
+.user-nav li div p {
+    font-size: 12px;
+}
+
+.mini-user {
+    display: block;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+.user-container-infor {
+    display: flex;
+    margin-top: 10px;
+}
+
+.user-container-nav-item {
+    position: relative;
+}
+
+.user-nav {
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    top: 115%;
+    left: -400%;
+}
+
+.user-container-nav-item:hover {
+    cursor: pointer;
+}
+
+.btnLogout{
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    cursor: pointer;
+}

@@ -1,0 +1,70 @@
+//Global
+.info-div-wrap {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.info-change-info {
+    align-self: flex-end;
+}
+
+.info-wrap-content {
+    width: 100%;
+    height: 100%;
+}
+
+//Text - input
+.info-label-input {
+    padding-bottom: 20px;
+}
+
+.info-label-input > label {
+    font-size: 16px;
+    margin: auto 0;
+    display: inline-block;
+    width: 15vh;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+.info-label-input > input,
+.info-label-input > select {
+    height: 40px;
+    width: 360px;
+    border-radius: 10px;
+    border: 1px solid #595260;
+    font-weight: 500px;
+    opacity: 0.5;
+    line-height: 16px;
+    padding: 0 10px;
+}
+
+.info-label-input > input,
+.info-label-input > select {
+    outline-color: #9f0311;
+}
+
+.info-label-input > input:hover,
+.info-label-input > select:hover {
+    border-color: #9f0311;
+}
+
+//Button
+.info-btn-cancel {
+    border-radius: 10px;
+    width: 92px;
+    height: 42px;
+    background-color: #e9eaea;
+    border: none;
+    color: #9f0311;
+    margin-right: 5px;
+}
+
+.info-btn-save {
+    border-radius: 10px;
+    width: 92px;
+    height: 42px;
+    background-color: #9f0311;
+    border: none;
+    color: #ffffff;
+}

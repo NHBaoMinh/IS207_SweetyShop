@@ -1,0 +1,32 @@
+.user-information-form {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 10px; }
+
+.user-image-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; }
+
+.personal-information h4 {
+  color: #9f0311;
+  font-weight: 650; }
+
+.personal-information label {
+  font-weight: 700; }
+
+.button-group {
+  display: flex;
+  justify-content: right; }
+
+.user-actions-contents {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  min-height: 300px; }
+
+.user-actions-contents > div {
+  margin: 0.5em;
+  padding: 0.5em;
+  border-bottom: 1px solid #e8e1d9; }
+
+.user-actions-contents > div:hover {
+  cursor: pointer; }

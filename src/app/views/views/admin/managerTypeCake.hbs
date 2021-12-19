@@ -1,0 +1,167 @@
+<div>
+    <!-- Modal Thêm loại bánh -->
+    <div
+        class='modal fade'
+        id='addTypeCakeModal'
+        tabindex='-1'
+        role='dialog'
+        aria-labelledby='exampleModalCenterTitle'
+        aria-hidden='true'
+    >
+        <div class='modal-dialog modal-dialog-centered' role='document'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title' id='addCakeModalTitle'>Thêm loại bánh</h5>
+                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                    </button>
+                </div>
+                <div class='modal-body'>
+                    <form id='form-add-typecake'>
+                        {{! Form add typecake }}
+                        <div class='change-password-div-wrap'>
+                            <div class='change-password-wrap-content'>
+                                <div class='change-password-label-input'>
+                                    <label for='' class=''>Tên loại bánh</label>
+                                    <input type='text' name='name' class='' placeholder='Nhập tên loại bánh' />
+                                </div>
+                                <div class="form-group">
+                                    <label for="ImageTypeCake">Hình loại bánh</label>
+                                    <input type="file" class="form-control-file" id="imageTypeCake" name="image">
+                                </div>
+                            </div>
+                        </div>
+                <button type='submit' style='display: none' id='btn-submit'></button>
+
+                    </form>
+                </div>
+                <div class='modal-footer'>
+                    <button
+                        type='button'
+                        class='btn btn-outline-danger change-password-btn-cancel'
+                        data-dismiss='modal'
+                    >Hủy</button>
+                    <button
+                        type='button'
+                        class='btn btn-success change-password-custom-btn-success'
+                        id='btn-change-password'
+                    >Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Chỉnh sửa loại bánh -->
+    <div
+        class='modal fade'
+        id='editTypeCakeModal'
+        tabindex='-1'
+        role='dialog'
+        aria-labelledby='exampleModalCenterTitle'
+        aria-hidden='true'
+    >
+        <div class='modal-dialog modal-dialog-centered' role='document'>
+            <div class='modal-content'>
+                <div class='modal-header'>
+                    <h5 class='modal-title' id='editCakeModalTitle'>Chỉnh sửa bánh</h5>
+                    <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                    </button>
+                </div>
+                <div class='modal-body'>
+                    <form id='form-edit-typecake'>
+                        {{! Form edit typecake }}
+                        <div class='change-password-div-wrap'>
+                            <div class='change-password-wrap-content'>
+                                <div class='change-password-label-input'>
+                                    <label for='' class=''>Tên loại bánh</label>
+                                    <input type='text' name='name' class='' placeholder='Nhập tên loại bánh' />
+                                </div>
+                                <div class="form-group">
+                                    <label for="imageTypeCakeEdit">Hình loại bánh</label>
+                                    <input type="file" class="form-control-file" id="imageTypeCakeEdit" name="image">
+                                </div>
+                            </div>
+                            <button type='submit' style='display: none' id='btn-submit-save-change'></button>
+                        </div>
+                    </form>
+                </div>
+                <div class='modal-footer'>
+                    <button
+                        type='button'
+                        class='btn btn-outline-danger change-password-btn-cancel'
+                        data-dismiss='modal'
+                    >Hủy</button>
+                    <button
+                        type='button'
+                        class='btn btn-success change-password-custom-btn-success'
+                        id='btn-save-change'
+                    >Lưu thay đổi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='manaTypeCake-allDropdowStyle'>
+        <div class='manaTypeCake-dropcomponentStyle'>
+            <p class='manaTypeCake-headerTitle'>Tên loại bánh</p>
+            <select name='typeCake' id='typeCake' class='manaTypeCake-dropDownStyle'>
+                <option value='' disabled selected>Select your option</option>
+                <option class='manaTypeCake-optionDropDown' value='banhman'>Từ A -> Z</option>
+                <option class='manaTypeCake-optionDropDown' value='banhman'>Từ Z -> A</option>
+            </select>
+        </div>
+        <div class='manaTypeCake-dropcomponentStyle' style='margin-Right: 520px;'>
+            <p class='manaTypeCake-headerTitle'>Ngày thêm vào</p>
+            <select name='dateAdd' id='dateAdd' class='manaTypeCake-dropDownStyle'>
+                <option value='' disabled selected>Select your option</option>
+                <option class='manaTypeCake-optionDropDown' value='moinhat'>Mới nhất</option>
+                <option class='manaTypeCake-optionDropDown' value='cunhat'>Cũ nhất</option>
+            </select>
+        </div>
+
+        <div class='manaTypeCake-dropcomponentStyle' style='margin-Right:60px'>
+            <button type='button' class='change-password-btn-save' style='margin-top: 50%;'>Tìm kiếm</button>
+        </div>
+    </div>
+    <div class='manaTypeCake-styleList'>
+        <table class='table table-hover manaTypeCake-tableStyle'>
+            <tbody>
+                <div>
+                    <tr>
+                        <th class='manaTypeCake-firstRowTable' scope='col'>STT</th>
+                        <th class='manaTypeCake-firstRowTable' scope='col'>Mã tin</th>
+                        <th class='manaTypeCake-firstRowTable' scope='col'>Tên bánh</th>
+                        <th class='manaTypeCake-firstRowTable' scope='col'>Ngày thêm vào</th>
+                        <th class='manaTypeCake-firstRowTable' scope='col'></th>
+                    </tr>
+                </div>
+                {{#each data.typeCakes}}
+                    <tr>
+                        <td>{{sum @index 1}}</td>
+                        <td style='color: #9F0311;'>{{this._id}}</td>
+                        <td style='color: #9F0311;'>{{this.name}}</td>
+                        <td>{{formatDate this.createdAt}}</td>
+                        <td class='manaTypeCake-dropdown'>
+                            <img class='manaTypeCake-dropbtn' src='/image/3dot.png' alt='' width='18' height='18' />
+                            <div class='manaTypeCake-dropdown-content'>
+                                <button href='#' data-toggle='modal' data-target='#editTypeCakeModal' class='btn-edit' id='btn-edit' value={{this._id}}>Chỉnh sửa</button>
+                                <button href='#'>Xóa</button>
+                            </div>
+                        </td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+        <button
+            type='button'
+            class='change-password-btn-save'
+            style='position: absolute;
+        justify-content: flex-end;
+        right: 12px;
+        bottom: 12px;'
+            data-toggle='modal'
+            data-target='#addTypeCakeModal'
+        >Thêm loại bánh</button>
+    </div>
+</div>

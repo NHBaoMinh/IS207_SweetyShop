@@ -1,0 +1,177 @@
+.checkout {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-size: 16px;
+}
+.checkout-img-header {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 400px;
+}
+.checkout-header h4 {
+    position: relative;
+    left: 450px;
+    top: -32px;
+}
+.checkout-delivery .img-delivery {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.checkout-delivery .checkout-address input {
+    margin-left: 55px;
+    width: 470px;
+    border: none;
+    outline: none;
+}
+
+.checkout-delivery .checkout-time {
+    margin-left: 55px;
+}
+.checkout-delivery .checkout-time .input-time {
+    margin-top: 10px;
+    width: 470px;
+    border: none;
+    outline: none;
+}
+
+.checkout-delivery .form_deli .input-form {
+    width: 100%;
+    height: 45px;
+    border: 0.5px solid rgb(190, 187, 187);
+    margin-top: 20px;
+    color: rgb(179, 179, 179);
+}
+
+.checkout-delivery .form_deli .input-form::placeholder {
+    padding: 20px;
+    color: rgb(179, 179, 179);
+}
+
+.checkout-delivery .form_deli {
+    margin-bottom: 30px;
+}
+
+.payment .form_pay .pay {
+    width: 28px;
+    height: 24px;
+    margin-left: 25px;
+    margin-right: 5px;
+}
+.check input[type='radio']:after {
+    width: 23px;
+    height: 23px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 3px solid rgb(163, 162, 162);
+}
+
+.check input[type='radio']:checked:after {
+    width: 23px;
+    height: 23px;
+    border-radius: 12px;
+    position: relative;
+    background-color: #9f0311;
+    display: inline-block;
+    visibility: visible;
+}
+
+.payment .agree {
+    margin-top: 30px;
+}
+.payment .agree-img {
+    width: 35px;
+    height: 35px;
+    margin-top: -2px;
+}
+
+.note_order {
+    box-shadow: 5px 5px 5px 5px #b3b0b0;
+    border-radius: 12px;
+    margin-left: 20px;
+}
+.btn-add {
+    background: #9f0311;
+    background-image: -webkit-linear-gradient(top, #9f0311, #9f0311);
+    background-image: -moz-linear-gradient(top, #9f0311, #9f0311);
+    background-image: -ms-linear-gradient(top, #9f0311, #9f0311);
+    background-image: -o-linear-gradient(top, #9f0311, #9f0311);
+    background-image: linear-gradient(to bottom, #9f0311, #9f0311);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    text-shadow: 1px 1px 3px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 8px 15px 8px 15px;
+    text-decoration: none;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.btn-add:hover {
+    background: #7c020c;
+    color: #ffffff;
+}
+
+.checkout-cake {
+    margin-top: 20px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.checkout-menu tr {
+    height: 90px;
+}
+
+.checkout-menu .pen_img {
+    width: 35px;
+    height: 35px;
+}
+
+.btn_del {
+    background: #ffffff;
+    -webkit-border-radius: 24;
+    -moz-border-radius: 24;
+    border-radius: 24px;
+    font-family: Arial;
+    color: #000000;
+    font-size: 16px;
+    border: solid #666666 0px;
+    text-decoration: none;
+    position: relative;
+    left: -5px;
+}
+
+.btn_del:hover {
+    background: #9f0311;
+    color: #ffffff;
+}
+
+.total {
+    padding-top: 30px;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-bottom: 15px;
+}
+
+.order .btn-order {
+    width: 100px;
+    border-radius: 28px;
+    padding: 8px 15px 8px 15px;
+    border: 2px solid #9f0311;
+    background-color: #ffffff;
+}
+.order .btn-order:hover {
+    background-color: #9f0311;
+    color: #ffffff;
+}

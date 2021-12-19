@@ -1,0 +1,23 @@
+.breadcrumbs {
+  padding: 10px;
+  margin: 0px !important; }
+
+.breadcrumbs__item {
+  display: inline-block; }
+
+.breadcrumbs__item:not(:last-of-type)::after {
+  content: '/';
+  margin: 0 5px;
+  color: #cccccc; }
+
+.breadcrumbs__link {
+  text-decoration: none;
+  color: #999999; }
+
+.breadcrumbs__link:hover {
+  text-decoration: underline;
+  color: #9f0311; }
+
+.breadcrumbs > li:last-child > a {
+  color: #9f0311;
+  font-weight: 500; }
